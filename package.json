@@ -1,0 +1,27 @@
+{
+  "name": "luvio-website",
+  "version": "1.0.0",
+  "description": "Our main website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FriskyAtom/luvio.git"
+  },
+  "keywords": [
+    "webdevelopment"
+  ],
+  "author": "Lukas Frajt, Vitaliy Kindrat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FriskyAtom/luvio/issues"
+  },
+  "homepage": "https://github.com/FriskyAtom/luvio#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.7.2",
+    "node-sass": "^4.13.0",
+    "postcss": "^7.0.23"
+  }
+}

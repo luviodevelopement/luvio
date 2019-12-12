@@ -6,10 +6,10 @@
   "scripts": {
     "watch:sass": "node-sass src/styles/sass/main.scss src/styles/css/style.css -w",
     "start": "npm-run-all --parallel devserver watch:sass",
-    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
-    "concat:css": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css",
-    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.concat.css -o css/style.prefix.css",
-    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed"
+    "compile:sass": "node-sass src/styles/sass/main.scss src/styles/css/style.comp.css",
+    "concat:css": "concat -o src/styles/css/style.concat.css src/styles/css/icon-font.css src/styles/css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' src/styles/css/style.concat.css -o src/styles/css/style.prefix.css",
+    "compress:css": "node-sass src/styles/css/style.prefix.css src/styles/css/style.css --output-style compressed"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,31 @@
+.footer {
+  color: $color-white;
+  background-color: $color-secondary;
+  padding: 2rem;
+
+  &__list {
+    display: flex;
+    padding: 0;
+    text-align: center;
+    justify-content: space-between;
+
+    &--business {
+      flex-direction: column;
+      .footer__list__item {
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    &--social {
+
+    }
+
+    &__item{
+      list-style: none;
+    }
+
+    &__link {
+      color: $color-white;
+    }
+  }
+}

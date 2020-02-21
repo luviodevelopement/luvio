@@ -2,11 +2,31 @@
   background-color: $color-white;
   width: 100%;
   margin: auto;
-  padding-top: 3rem;
+  padding: 3rem 0 0 0;
 
   &__paragraph {
     width: 90%;
+    padding: 0 1rem 0 1rem;
     margin: 0 auto 1.5rem auto;
+  }
+
+  &__form {
+    padding: 0 1rem 0 1rem;
+  }
+
+  &__address {
+    width: 100%;
+    background-color: $color-background;
+    text-align: center;
+    padding: 1.9rem 0;
+    &__email {
+      font-size: 1.8rem;
+      width: 100%;
+    }
+    &__phone {
+      font-size: 1.5rem;
+      width: 100%;
+    }
   }
 
 }

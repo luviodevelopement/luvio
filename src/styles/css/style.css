@@ -7242,7 +7242,7 @@ body {
 
 .form {
   width: 90%;
-  margin: auto; }
+  margin: 0 auto 2rem auto; }
   .form .form-control {
     color: #FE1F54;
     background-color: #E8EFFA;
@@ -7261,7 +7261,7 @@ body {
 .references {
   position: relative;
   width: 90%;
-  margin: auto;
+  margin: 0 auto .8rem auto;
   height: 13.5rem; }
   .references__item {
     position: absolute;
@@ -7305,6 +7305,24 @@ body {
       left: 5%; }
     .references .direction--right {
       right: 5%; }
+
+.footer {
+  color: #FFFFFF;
+  background-color: #352A50;
+  padding: 2rem; }
+  .footer__list {
+    display: flex;
+    padding: 0;
+    text-align: center;
+    justify-content: space-between; }
+    .footer__list--business {
+      flex-direction: column; }
+      .footer__list--business .footer__list__item {
+        margin-bottom: 1.5rem; }
+    .footer__list__item {
+      list-style: none; }
+    .footer__list__link {
+      color: #FFFFFF; }
 
 .motto {
   line-height: normal;
@@ -7384,7 +7402,21 @@ nav {
   background-color: #FFFFFF;
   width: 100%;
   margin: auto;
-  padding-top: 3rem; }
+  padding: 3rem 0 0 0; }
   .contact__paragraph {
     width: 90%;
+    padding: 0 1rem 0 1rem;
     margin: 0 auto 1.5rem auto; }
+  .contact__form {
+    padding: 0 1rem 0 1rem; }
+  .contact__address {
+    width: 100%;
+    background-color: #E8EFFA;
+    text-align: center;
+    padding: 1.9rem 0; }
+    .contact__address__email {
+      font-size: 1.8rem;
+      width: 100%; }
+    .contact__address__phone {
+      font-size: 1.5rem;
+      width: 100%; }

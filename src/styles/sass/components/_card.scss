@@ -1,4 +1,5 @@
 .tile {
+  margin-bottom: 3rem;
 
   &__image {
     height: 7.3rem;
@@ -19,8 +20,11 @@
 
   &__heading {
     display: flex;
+    margin-bottom: .6rem;
+
     &__numbering {
       line-height: normal;
+      margin-right: 1.2rem;
     }
   }
 }

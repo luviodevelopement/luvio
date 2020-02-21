@@ -1,0 +1,27 @@
+.form {
+  width: 90%;
+  margin: auto;
+
+  .form-control {
+    color: $color-primary;
+    background-color: $color-background;
+    border: none;
+    border-radius: .125rem;
+  }
+
+  .btn {
+    background-color: $color-primary;
+    width: 100%;
+    border:none;
+    border-radius: .125rem;
+    font-weight: bold;
+    padding: 1rem 0;
+  }
+
+
+
+  textarea {
+    height: 10rem;
+
+  }
+}

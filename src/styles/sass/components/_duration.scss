@@ -1,0 +1,13 @@
+.duration {
+  background-color: $color-white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 3rem;
+  padding: 1.9rem;
+  &__paragraph {
+    width: 15rem;
+    margin: 0;
+  }
+
+}

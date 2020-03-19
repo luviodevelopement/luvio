@@ -1,91 +1,127 @@
+.header {
 
-.motto{
-  line-height: normal;
-  margin: 1.8rem 0 2.1rem 0;
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-.wrapper {
-  padding: 0 .5rem;
-}
+  .motto {
+    line-height: normal;
+    margin: 1.8rem 0 2.1rem 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
 
-h1 {
-  color: $color-primary;
-  font-weight: bold;
-  font-size: 5.8rem;
-  margin-bottom: .8rem;
-}
+  .wrapper {
+    padding: 0 .5rem;
+  }
 
+  h1 {
+    color: $color-primary;
+    font-weight: bold;
+    font-size: 5.8rem;
+    margin-bottom: .8rem;
+  }
 
-h2 {
-  font-size: 1.25rem;
-  margin-bottom: .5rem;
-}
-nav {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.nav-item {
-  font-weight: bold;
-  font-size: 1.1rem;
-  display: block;
-  height: 8.5rem;
-  width: 9.4rem;
-  background-color: $color-secondary;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: 0 .35rem .35rem 0;
-  background-size: contain;
+  h2 {
+    font-size: 1.25rem;
+    margin-bottom: .5rem;
+  }
 
-  a {
-    padding: 1.25rem .6rem;
-    display: block;
-    width: 100%;
-    height: 100%;
-
-    img {
-      width: 100%;
-      height: 100%;
+  .our-vision {
+    &__list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
     }
 
-    &.nav-switcher {
-      font-weight: normal;
-      justify-content: center;
-      flex-direction: column;
-      display: flex;
-      align-items: center;
+    &__item {
+      font-weight: bold;
+      font-size: 1.1rem;
+      display: block;
+      height: 8.5rem;
+      width: 9.4rem;
+      background-color: $color-secondary;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 0 .35rem .35rem 0;
+      background-size: contain;
 
-      .nav-icon {
-        width: 45px;
-        height: 30px;
-        margin-bottom: 1.25rem;
+      a {
+        padding: 1.25rem .6rem;
+        display: block;
+        width: 100%;
+        height: 100%;
+
+        &:hover, :focus {
+          text-decoration: none;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      &--1 {
+        background-image: linear-gradient(rgba($color-secondary, 0.45), rgba($color-secondary, 0.45)), url("../../img/code_s.png");
+      }
+
+      &--2 {
+        background-image: linear-gradient(rgba($color-secondary, 0.45), rgba($color-secondary, 0.45)), url("../../img/mobile_s.png");
+      }
+
+      &--3 {
+        background-image: linear-gradient(rgba($color-secondary, 0.45), rgba($color-secondary, 0.45)), url("../../img/people_s.png");
+      }
+
+      &__title {
+        line-height: normal;
+        color: $color-white;
+        margin-bottom: .5rem;
       }
     }
   }
-
-  &.opener{
-    opacity: 1;
-  }
-  &--1{
-    background-image: linear-gradient(rgba($color-secondary, 0.45), rgba($color-secondary, 0.45)),url("../../img/code_s.png");
-  }
-  &--2{
-    background-image: linear-gradient(rgba($color-secondary, 0.45), rgba($color-secondary, 0.45)),url("../../img/mobile_s.png");
-  }
-  &--3{
-    background-image: linear-gradient(rgba($color-secondary, 0.45), rgba($color-secondary, 0.45)),url("../../img/people_s.png");
+  .navigation {
+    display: none;
   }
 
 
-  .title{
-    line-height: normal;
-    color: $color-white;
-    margin-bottom: .5rem;
-  }
-}
+  .next {
+    margin: 3rem 0 1rem 0;
 
-.next {
-  margin: 3rem 0 1rem 0;
+    @media only screen and(min-width: 992px) {
+      display: none;
+    }
+  }
+
+  @media only screen and(min-width: 992px) {
+    height: 100vh;
+
+    .motto {
+      font-size: 2rem;
+      margin-bottom: 3.5rem;
+    }
+
+    h1 {
+      font-size: 9rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    .our-vision {
+      &__list {
+        justify-content: flex-start;
+      }
+
+      &__item {
+        font-size: 2.2rem;
+        height: 15rem;
+        width: 17.5rem;
+        &:not(:last-child){
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
 }

@@ -1,0 +1,38 @@
+.side-bar {
+  display: none;
+  background-color: $color-white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 4.7rem;
+
+  &__list {
+    height: 80vh;
+    transform: translateY(20%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    &__item {
+      -ms-transform: rotate(-90deg) translateX(50%);
+      transform: rotate(-90deg) translateX(50%);
+
+      &__anchor {
+        color: $color-secondary;
+        &:hover, &:focus, &:visited {
+          color: $color-secondary;
+        }
+      }
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+display: block;
+}
+}

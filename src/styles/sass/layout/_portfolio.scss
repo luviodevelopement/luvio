@@ -1,0 +1,11 @@
+.portfolio {
+  @media only screen and (min-width: 992px) {
+    height: 100vh;
+    margin: 4rem auto 0 auto;
+    border-bottom: 2px solid red;
+
+    &__made-with-love {
+      font-size: 1.5rem;
+    }
+  }
+}

@@ -15,7 +15,24 @@
   &--clients {
     width: 3.7rem;
   }
-  &--numbering{
+  &--numbering {
     width: 1.1rem;
+  }
+
+  @media only screen and (min-width: 992px) {
+    height: .31rem;
+    &--heading {
+        width: 8rem;
+      }
+
+    &--presentaion {
+      width: 8.8rem;
+    }
+    &--responsive-design {
+      width: 7.8rem;
+    }
+    &--clients {
+      width: 7.25rem;
+    }
   }
 }

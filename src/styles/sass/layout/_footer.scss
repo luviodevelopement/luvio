@@ -28,4 +28,17 @@
       color: $color-white;
     }
   }
+  @media only screen and (min-width: 992px) {
+    &__list {
+
+      &--business {
+        flex-direction: row;
+        width: 80%;
+        margin: 0 auto 2rem auto;
+        justify-content: space-around;
+        border-bottom: 1px solid  $color-background-secondary;
+
+      }
+    }
+  }
 }

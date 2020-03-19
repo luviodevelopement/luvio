@@ -7,6 +7,21 @@
   margin-bottom: 2rem;
   font-weight: bold;
   color: $color-secondary;
+
+  &__numbering {
+    display: none;
+    font-size: 3rem;
+    font-weight: 400;
+    vertical-align: text-top;
+  }
+
+  @media only screen and (min-width: 992px) {
+    text-align: left;
+    font-size: 4rem;
+    &__numbering {
+      display: inline-block;
+    }
+  }
 }
 
 .heading-tertiary {
@@ -14,4 +29,9 @@
   font-size: 1rem;
   text-align: right;
   line-height: normal;
+
+  @media only screen and (min-width: 992px) {
+    margin-top: .5rem;
+    text-align: left;
+  }
 }

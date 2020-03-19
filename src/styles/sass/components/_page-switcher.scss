@@ -1,0 +1,26 @@
+.page-switcher{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: $color-secondary;
+  display: none;
+  flex-direction: column;
+
+
+  &__item {
+    width: 4.5rem;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &__image {
+
+    }
+  }
+
+  @media only screen and(min-width: 992px) {
+    display: flex;
+  }
+}

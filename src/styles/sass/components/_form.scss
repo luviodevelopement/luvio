@@ -1,12 +1,15 @@
 .form {
-  width: 90%;
-  margin: 0 auto 2rem auto;
 
-  .form-control {
+
+  &__input{
     color: $color-primary;
     background-color: $color-background;
     border: none;
     border-radius: .125rem;
+
+    &::placeholder {
+      color: rgba($color-primary, .25);
+    }
   }
 
   .btn {
@@ -18,10 +21,19 @@
     padding: 1rem 0;
   }
 
-
-
   textarea {
     height: 10rem;
+  }
 
+  @media only screen and (min-width: 992px) {
+    &__input {
+      background: $color-white;
+      color: $color-primary;
+      box-shadow: 0 3px 6px #00000019;
+
+    }
+      &__label {
+        display: none;
+      }
   }
 }

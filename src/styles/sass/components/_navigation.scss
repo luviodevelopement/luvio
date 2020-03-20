@@ -1,14 +1,45 @@
 .nav{
+  position: absolute;
   z-index: 999;
+  top: 19.15rem;
+  left: 1.1rem;
+  height: 17.72rem;
+  width: 19.5rem;
+
+  &__list {
+    display: none;
+    flex-flow: wrap;
+
+    &--open {
+      display: flex;
+
+    }
+  }
 
   &__item {
     background-color: $color-secondary;
+    height: 8.5rem;
+    width: 9.4rem;
+    margin: 0 .35rem .35rem 0;
+    font-size: 1.1rem;
+
     &__switcher {
       font-weight: normal;
       justify-content: center;
       flex-direction: column;
       display: flex;
       align-items: center;
+      color: $color-white;
+
+    }
+
+    &--opener {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      right: 0;
+      bottom: 0;
     }
 
     &__icon {
@@ -19,18 +50,13 @@
   }
 
   @media only screen and(min-width: 992px) {
-    position: absolute;
     left: 0;
     top: 0;
     height: 4.7rem;
 
     &__list {
-      display: none;
       border-radius: 0 0 10px 0;
       overflow: hidden;
-      &--open {
-        display: flex;
-      }
     }
 
     &__item {

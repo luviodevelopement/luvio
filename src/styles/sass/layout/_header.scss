@@ -24,11 +24,12 @@
   }
 
   .our-vision {
+
     &__list {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: flex-start;
       margin: 0;
       padding: 0;
     }
@@ -110,10 +111,6 @@
     }
 
     .our-vision {
-      &__list {
-        justify-content: flex-start;
-      }
-
       &__item {
         font-size: 2.2rem;
         height: 15rem;

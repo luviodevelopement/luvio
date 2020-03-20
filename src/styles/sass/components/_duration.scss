@@ -1,0 +1,19 @@
+.duration {
+  background-color: $color-white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 -10px 0 -10px;
+  padding: 1.9rem;
+  &__paragraph {
+    width: 15rem;
+    margin: 0;
+  }
+  @media only screen and (min-width: 992px) {
+    position: absolute;
+    left: 5rem;
+    width: 31rem;
+    border-radius: 0 10px 10px 0 ;
+  }
+
+}

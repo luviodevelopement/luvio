@@ -1,0 +1,38 @@
+.line {
+  height: .2rem;
+  background-color: $color-primary;
+
+  &--heading {
+    width: 5rem;
+    margin-bottom: 2rem;
+  }
+  &--presentaion {
+    width: 4.5rem;
+  }
+  &--responsive-design {
+    width: 4rem;
+  }
+  &--clients {
+    width: 3.7rem;
+  }
+  &--numbering {
+    width: 1.1rem;
+  }
+
+  @media only screen and (min-width: 992px) {
+    height: .31rem;
+    &--heading {
+        width: 8rem;
+      }
+
+    &--presentaion {
+      width: 8.8rem;
+    }
+    &--responsive-design {
+      width: 7.8rem;
+    }
+    &--clients {
+      width: 7.25rem;
+    }
+  }
+}

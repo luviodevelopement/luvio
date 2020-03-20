@@ -1,0 +1,25 @@
+.process {
+  margin: 0 auto 3rem auto;
+  border-bottom: 2px solid red;
+
+  &__list {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media only screen and (min-width: 992px) {
+    height: 100vh;
+    width: 100%;
+    margin: 4rem auto 0 auto;
+
+    &__list {
+      flex-direction: row;
+      width: 95%;
+      justify-content: space-between;
+    }
+  }
+}
+
+

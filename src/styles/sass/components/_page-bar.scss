@@ -1,12 +1,13 @@
 .page-bar {
   position: fixed;
   display: flex;
-  margin-right: 1.1rem;
+  margin-right: .6rem;
   top: 50%;
   right:0;
   transform: translateY(-50%);
   flex-flow: column;
-  width: .8rem;
+  width: .6rem;
+  z-index: 999;
 
   .bar-item {
     display: block;
@@ -18,10 +19,16 @@
 
     &--active {
       opacity: 1;
+      height: .4rem;
     }
 
     &:not(:last-child) {
       margin-bottom: 2rem;
     }
+  }
+  @media only screen and(min-width: 992px) {
+    width: 1.9rem;
+    margin-right: 3.5rem;
+
   }
 }

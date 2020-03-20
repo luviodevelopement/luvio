@@ -13,11 +13,19 @@
 @import "components/card";
 @import "components/page-bar";
 @import "components/line";
+@import "components/duration";
+@import "components/form";
+@import "components/references";
+@import "components/side-bar";
+@import "components/navigation";
+@import "components/page-switcher";
 
 @import "layout/footer";
-@import "layout/grid";
 @import "layout/header";
 @import "layout/navigation";
-@import "layout/creation";
+@import "layout/process";
+@import "layout/contact";
+@import "layout/portfolio";
+@import "layout/content-wrapper";
 
 @import "pages/home";

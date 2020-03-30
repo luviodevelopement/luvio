@@ -2,7 +2,6 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  background-color: $color-secondary;
   display: none;
   flex-direction: column;
 
@@ -14,6 +13,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    background-color: $color-secondary;
 
     &__image {
 

@@ -1,7 +1,8 @@
 .footer {
   color: $color-white;
   background-color: $color-secondary;
-  padding: 2rem;
+  padding: 2.5rem 2rem;
+  text-align: center;
 
   &__list {
     display: flex;
@@ -11,13 +12,18 @@
 
     &--business {
       flex-direction: column;
+      margin-bottom: 0;
       .footer__list__item {
         margin-bottom: 1.5rem;
       }
     }
 
-    &--social {
-
+    &--social, &--contact {
+      display: inline-flex;
+      padding: 0;
+      width: 49%;
+      text-align: center;
+      justify-content: space-around;
     }
 
     &__item{
@@ -28,17 +34,39 @@
       color: $color-white;
     }
   }
+
+  &__logo {
+    margin-bottom: 3rem;
+  }
+
   @media only screen and (min-width: 992px) {
     &__list {
-
+      display: inline-flex;
       &--business {
         flex-direction: row;
         width: 80%;
         margin: 0 auto 2rem auto;
         justify-content: space-around;
         border-bottom: 1px solid  $color-background-secondary;
-
       }
+
+      &--social {
+        width: 33%;
+        justify-content: flex-start;
+      }
+
+      &--contact {
+        width: 33%;
+        justify-content: flex-end;
+      }
+
+      &__item{
+        padding: 0 1rem;
+      }
+    }
+
+    &__logo {
+      margin-bottom: -4rem;
     }
   }
 }

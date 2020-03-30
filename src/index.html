@@ -6,30 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="styles/css/style.css">
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
     <title>Luvio Development</title>
 </head>
 <body>
 <nav class="nav">
     <div class="nav__item nav__item--opener">
-        <a href="#" type="button" id="navOpener" class="nav__item__switcher">
+        <a href="#" type="button" id="navOpener" role="button" class="nav__item__switcher">
             <img class="nav__item__icon" src="img/menu_mobile.svg" alt="menu opener">
             <span class="nav__item__title">Menu</span>
         </a>
     </div>
     <div class="nav__list" id="navigationList">
         <div class="nav__item nav__item--1">
-            <a class="nav__item__link" href="seznam.cz" target="_blank">
+            <a class="nav__item__link" href="#">
+                <img src="img/services.svg" alt="services icon" class="nav__item__icon">
                 <div class="nav__item__title">služby</div>
             </a>
         </div>
         <div class="nav__item nav__item--2">
             <a class="nav__item__link" href="#">
+                <img src="img/portfolio.svg" alt="services icon" class="nav__item__icon">
                 <div class="nav__item__title">portfolio</div>
             </a>
         </div>
         <div class="nav__item nav__item--3">
             <a class="nav__item__link" href="#">
+                <img src="img/contact.svg" alt="services icon" class="nav__item__icon">
                 <div class="nav__item__title">kontakt</div>
             </a>
         </div>
@@ -70,11 +73,9 @@
         <div class="next text-center">
             <img src="img/arrow-down.svg" alt="next page" style="transform:rotate(90deg);">
         </div>
-        <div class="content-switcher">
-
-        </div>
     </header>
-    <section id="process-content" class="container process hide pageContent">
+    <section id="process-content" class="container process pageContent">
+        <div class="motto text-center color-primary">Luvio <span class="color-secondary">.</span></div>
         <h2 class="heading-secondary">
             <div class="heading-secondary__numbering">
                 01<div class="line line--heading-numbering"></div>
@@ -132,38 +133,23 @@
                 Při vzájemné spolupráci Vám web spustíme do 1 měsíce.</p>
         </div>
     </section>
-    <section id="portfolio-content" class="portfolio container hide pageContent">
+    <section id="portfolio-content" class="portfolio container pageContent">
+        <div class="motto text-center color-primary">Luvio <span class="color-secondary">.</span></div>
         <h2 class="heading-secondary">
             <div class="heading-secondary__numbering">
                 02<div class="line line--heading-numbering"></div>
             </div>
             NAŠE <span class="color-primary">REFERENCE</span></h2>
         <div class="references">
-            <div class="references__item "> <!-- references__item--second -->
+            <div class="references__item  references__item--second "> <!-- references__item--second -->
                 <img class="references__item__image" src="img/mobile_s.png">
                 <div class="overlay"></div>
             </div>
-            <div class="references__item "> <!-- references__item--active -->
+            <div class="references__item references__item--active"> <!-- references__item--active -->
                 <img class="references__item__image" src="img/mobile_s.png">
                 <div class="overlay"></div>
             </div>
-            <div class="references__item "> <!-- references__item--third -->
-                <img class="references__item__image" src="img/mobile_s.png">
-                <div class="overlay"></div>
-            </div>
-            <div class="references__item "> <!-- references__item--third -->
-                <img class="references__item__image" src="img/mobile_s.png">
-                <div class="overlay"></div>
-            </div>
-            <div class="references__item "> <!-- references__item--third -->
-                <img class="references__item__image" src="img/mobile_s.png">
-                <div class="overlay"></div>
-            </div>
-            <div class="references__item "> <!-- references__item--second -->
-                <img class="references__item__image" src="img/mobile_s.png">
-                <div class="overlay"></div>
-            </div>
-            <div class="references__item "> <!-- references__item--second -->
+            <div class="references__item references__item--third"> <!-- references__item--third -->
                 <img class="references__item__image" src="img/mobile_s.png">
                 <div class="overlay"></div>
             </div>
@@ -172,59 +158,68 @@
         </div>
         <p class="portfolio__made-with-love text-center">Made with love <img src="img/like.svg" alt="love"></p>
     </section>
-    <section id="contact-content"class="container contact hide pageContent">
-        <h2 class="heading-secondary">
-            <div class="heading-secondary__numbering">
-                03<div class="line line--heading-numbering"></div>
-            </div>
-            KONTAKTUJTE <span class="color-primary">NÁS</span></h2>
-        <div class="contact__wrapper">
-            <p class="contact__paragraph contact__paragraph--mobile">Kontakt s námi můžete navázat buď pomocí formuláře níže, nebo <span
-                    class="text-underline">telefonicky</span>.</p>
-            <p class="contact__paragraph contact__paragraph--desktop">Měli byste zájem o webovou prezentaci?<br>Můžete nás kontaktovat pomocí formuláře níže.</p>
-            <div class="contact__options">
-                <form class="contact__form form">
-                    <div class="form-row">
-                        <div class="form-group col-lg-6">
-                            <label class="form__label" for="name">Jméno a příjmení</label>
-                            <input type="text" name="name" id="name" class="form__input form-control" placeholder="Jmeno Prijmeni">
+    <div class="pageContent">
+        <section id="contact-content"class="container contact">
+            <div class="motto text-center color-primary">Luvio <span class="color-secondary">.</span></div>
+            <h2 class="heading-secondary">
+                <div class="heading-secondary__numbering">
+                    03<div class="line line--heading-numbering"></div>
+                </div>
+                KONTAKTUJTE <span class="color-primary">NÁS</span></h2>
+            <div class="contact__wrapper">
+                <p class="contact__paragraph contact__paragraph--mobile">Kontakt s námi můžete navázat buď pomocí formuláře níže, nebo <span
+                        class="text-underline">telefonicky</span>.</p>
+                <p class="contact__paragraph contact__paragraph--desktop">Měli byste zájem o webovou prezentaci?<br>Můžete nás kontaktovat pomocí formuláře níže.</p>
+                <div class="contact__options">
+                    <form class="contact__form form">
+                        <div class="form-row">
+                            <div class="form-group col-lg-6">
+                                <label class="form__label" for="name">Jméno a příjmení</label>
+                                <input type="text" name="name" id="name" class="form__input form-control" placeholder="Jmeno Prijmeni">
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <label class="form__label" for="email">Vaše emailová adresa</label>
+                                <input type="email" name="email" id="email" class="form__input form-control" placeholder="email">
+                            </div>
+                            <div class="form-group col-sm-12">
+                                <label class="form__label" for="message">Zpráva</label>
+                                <textarea name="message" id="message" class="form__input form-control" placeholder="Zprava"></textarea>
+                            </div>
+                            <div class="form-group col-sm-12">
+                                <button type="submit" class="btn btn-primary">Odeslat</button>
+                            </div>
                         </div>
-                        <div class="form-group col-lg-6">
-                            <label class="form__label" for="email">Vaše emailová adresa</label>
-                            <input type="email" name="email" id="email" class="form__input form-control" placeholder="email">
-                        </div>
-                        <div class="form-group col-sm-12">
-                            <label class="form__label" for="message">Zpráva</label>
-                            <textarea name="message" id="message" class="form__input form-control" placeholder="Zprava"></textarea>
-                        </div>
-                        <div class="form-group col-sm-12">
-                            <button type="submit" class="btn btn-primary">Odeslat</button>
-                        </div>
+                    </form>
+                    <div class="contact__address">
+                        <address class="contact__address__email color-primary">awesome@luvio.com</address>
+                        <p class="contact__address__paragraph">nebo</p>
+                        <address class="contact__address__phone">+420 123 456 789</address>
                     </div>
-                </form>
-                <div class="contact__address">
-                    <address class="contact__address__email color-primary">awesome@luvio.com</address>
-                    <p class="contact__address__paragraph">nebo</p>
-                    <address class="contact__address__phone">+420 123 456 789</address>
                 </div>
             </div>
-        </div>
 
+        </section>
+        <footer id="footer-content" class="footer ">
+            <ul class="footer__list footer__list--business">
+                <li class="footer__list__item"><a class="footer__list__link" href="#">Fakturační údaje</a></li>
+                <li class="footer__list__item"><a class="footer__list__link" href="#">Zásady ochrany osobních údajů</a></li>
+                <li class="footer__list__item"><a  class="footer__list__link" href="#">Zpracování cookies</a></li>
+            </ul>
+            <div class="footer__logo">
+                <img class="footer__logo__image" src="img/luvio-small.svg" alt="luvio logo">
+                <p class="footer__logo__text">2019</p>
+            </div>
+            <ul class="footer__list footer__list--social">
+                <li class="footer__list__item"><a href="#"><img src="img/facebook.svg" alt="facebook"></a></li>
+                <li class="footer__list__item"><a href="#"><img src="img/instagram.svg" alt="insta"></a></li>
+            </ul>
+            <ul class="footer__list footer__list--contact">
+                <li class="footer__list__item"><a href="#"><img src="img/phone-call.svg" alt="phone number"></a></li>
+                <li class="footer__list__item"><a href="#"><img src="img/envelope.svg" alt="email"></a></li>
+            </ul>
+        </footer>
+    </div>
 
-    </section>
-    <footer id="footer-content" class="footer ">
-        <ul class="footer__list footer__list--business">
-            <li class="footer__list__item"><a class="footer__list__link" href="#">Fakturační údaje</a></li>
-            <li class="footer__list__item"><a class="footer__list__link" href="#">Zásady ochrany osobních údajů</a></li>
-            <li class="footer__list__item"><a  class="footer__list__link" href="#">Zpracování cookies</a></li>
-        </ul>
-        <ul class="footer__list footer__list--social">
-            <li class="footer__list__item"><a href="#"><img src="img/facebook.svg" alt="facebook"></a></li>
-            <li class="footer__list__item"><a href="#"><img src="img/facebook.svg" alt="insta"></a></li>
-            <li class="footer__list__item"><a href="#"><img src="img/phone-call.svg" alt="phone number"></a></li>
-            <li class="footer__list__item"><a href="#"><img src="img/envelope.svg" alt="email"></a></li>
-        </ul>
-    </footer>
 </div>
 <div class="page-bar">
     <div class="bar-item bar-item--active"></div>
@@ -240,7 +235,7 @@
 </section>
 <section class="page-switcher">
     <div id="pageBack" class="page-switcher__item hide">
-        <img  class="page-switcher__item__image " src="img/right-white.svg" alt="">
+        <img  class="page-switcher__item__image " src="img/left-white.svg" alt="">
     </div>
     <div id="pageNext" class="page-switcher__item">
         <img  class="page-switcher__item__image" src="img/right-white.svg" alt="">

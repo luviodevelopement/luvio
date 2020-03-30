@@ -2,6 +2,7 @@
   color: $color-white;
   background-color: $color-secondary;
   padding: 2rem;
+  text-align: center;
 
   &__list {
     display: flex;
@@ -11,6 +12,7 @@
 
     &--business {
       flex-direction: column;
+      margin-bottom: 0;
       .footer__list__item {
         margin-bottom: 1.5rem;
       }
@@ -28,6 +30,11 @@
       color: $color-white;
     }
   }
+
+  &__logo {
+    margin-bottom: 3rem;
+  }
+
   @media only screen and (min-width: 992px) {
     &__list {
 

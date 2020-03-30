@@ -3,6 +3,9 @@ let menuList,navigationOpener, pageNext, pageBack, pages, pageIndicator;
 let pageNumber = 0;
 const pageContentClass = '.pageContent';
 const pageIndicatorClass = '.bar-item';
+const vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+
+const DESKTOPMINWIDTH = 992;
 
 document.addEventListener("DOMContentLoaded", function() {
     //navigation
@@ -21,6 +24,11 @@ document.addEventListener("DOMContentLoaded", function() {
     pageBack = document.getElementById('pageBack');
     pageNext = document.getElementById('pageNext');
     pages = document.querySelectorAll(pageContentClass);
+    if(vw >= 992){
+        for(let i = 1; i < pages.length; i++){
+            pages[i].classList.toggle('hide');
+        }
+    }
     pageIndicator = document.querySelectorAll(pageIndicatorClass);
 
     pageNext.addEventListener('click', function () {

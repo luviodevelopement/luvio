@@ -7431,7 +7431,10 @@ body {
     height: 8.5rem;
     width: 9.4rem;
     margin: 0 .35rem .35rem 0;
-    font-size: 1.1rem; }
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
     .nav__item__switcher {
       font-weight: normal;
       justify-content: center;
@@ -7440,9 +7443,6 @@ body {
       align-items: center;
       color: #FFFFFF; }
     .nav__item--opener {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       position: absolute;
       right: 0;
       bottom: 0; }
@@ -7450,18 +7450,30 @@ body {
       width: 45px;
       height: 30px;
       margin-bottom: 1.25rem; }
+    .nav__item__link {
+      font-weight: normal;
+      justify-content: center;
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      color: #FFFFFF; }
   @media only screen and (min-width: 992px) {
     .nav {
       left: 0;
       top: 0;
-      height: 4.7rem; }
+      height: 4.7rem;
+      width: auto;
+      flex-wrap: nowrap; }
       .nav__list {
         border-radius: 0 0 10px 0;
-        overflow: hidden; }
+        overflow: hidden;
+        flex-direction: row; }
       .nav__item {
         height: 100%;
+        width: auto;
         font-size: .88rem;
         display: flex;
+        margin: 0;
         flex-direction: row;
         align-items: center;
         padding-left: 2.7rem; }
@@ -7476,7 +7488,8 @@ body {
         .nav__item--opener {
           display: block;
           width: 4.7rem;
-          padding: 0; }
+          padding: 0;
+          position: static; }
           .nav__item--opener .nav__item__title {
             display: none; }
         .nav__item__switcher {
@@ -7511,20 +7524,24 @@ body {
 .footer {
   color: #FFFFFF;
   background-color: #352A50;
-  padding: 2rem; }
+  padding: 2rem;
+  text-align: center; }
   .footer__list {
     display: flex;
     padding: 0;
     text-align: center;
     justify-content: space-between; }
     .footer__list--business {
-      flex-direction: column; }
+      flex-direction: column;
+      margin-bottom: 0; }
       .footer__list--business .footer__list__item {
         margin-bottom: 1.5rem; }
     .footer__list__item {
       list-style: none; }
     .footer__list__link {
       color: #FFFFFF; }
+  .footer__logo {
+    margin-bottom: 3rem; }
   @media only screen and (min-width: 992px) {
     .footer__list--business {
       flex-direction: row;
@@ -7619,8 +7636,7 @@ body {
         margin-right: 2rem; } }
 
 .process {
-  margin: 0 auto 3rem auto;
-  border-bottom: 2px solid red; }
+  margin: 0 auto 3rem auto; }
   .process__list {
     margin: auto;
     width: 90%;

@@ -34,11 +34,18 @@ document.addEventListener("DOMContentLoaded", function() {
     pageNext.addEventListener('click', function () {
         pages[pageNumber].classList.add('hide');
         pageIndicator[pageNumber].classList.remove('bar-item--active');
+        if(pageNumber === pages.length-1){
+            pageNext.firstElementChild.src = 'img/right-white.svg'
+        }
         pageNumber = ++pageNumber < pages.length ? pageNumber : 0;
         pages[pageNumber].classList.remove('hide');
         pageIndicator[pageNumber].classList.add('bar-item--active');
+
         if(pageNumber === 0)
             pageBack.classList.add('hide');
+        else if(pageNumber === pages.length-1){
+            pageNext.firstElementChild.src = 'img/home-white.svg'
+        }
         else if(pageNumber === 1){
             pageBack.classList.remove('hide')
         }
@@ -48,6 +55,9 @@ document.addEventListener("DOMContentLoaded", function() {
     pageBack.addEventListener('click', function () {
         pages[pageNumber].classList.add('hide');
         pageIndicator[pageNumber].classList.remove('bar-item--active');
+        if(pageNumber === pages.length-1){
+            pageNext.firstElementChild.src = 'img/right-white.svg'
+        }
         pageNumber = pageNumber !== 0 ? --pageNumber : pages.length - 1;
         pages[pageNumber].classList.remove('hide');
         pageIndicator[pageNumber].classList.add('bar-item--active');

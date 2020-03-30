@@ -7511,7 +7511,9 @@ body {
         .nav__item__link {
           color: #E8EFFA;
           line-height: 4.7rem;
-          padding-left: .9rem; } }
+          padding-left: .9rem; }
+          .nav__item__link .nav__item__icon {
+            display: none; } }
 
 .page-switcher {
   position: absolute;

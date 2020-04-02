@@ -21,8 +21,12 @@
 
   @media only screen and (min-width: 992px) {
     height: .31rem;
+
     &--heading {
-        width: 8rem;
+      width: 8rem;
+      animation-name: moveInLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
       }
 
     &--presentaion {

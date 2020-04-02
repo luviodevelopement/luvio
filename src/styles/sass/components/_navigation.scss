@@ -12,7 +12,6 @@
 
     &--open {
       display: flex;
-
     }
   }
 
@@ -67,9 +66,20 @@
 
 
     &__list {
+      display: flex;
       border-radius: 0 0 10px 0;
       overflow: hidden;
       flex-direction: row;
+      transform-origin: 0 50%;
+      transform: scaleX(0);
+      transition-duration: 0.3s;
+      transition-property: transform;
+      transition-timing-function: ease-out;
+
+      &--open {
+        transform: scaleX(1);
+        //transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+      }
     }
 
     &__item {
@@ -120,6 +130,10 @@
         color: $color-background;
         line-height: 4.7rem;
         padding-left: .9rem;
+
+        &:hover, &:focus {
+          color: $color-primary;
+        }
 
         .nav__item__icon {
           display: none;

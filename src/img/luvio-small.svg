@@ -1,3 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="75" height="29" viewBox="0 0 75 29">
-  <text id="Luvio." transform="translate(0 23)" fill="#e8effa" font-size="24" font-family="MontserratAlternates-Bold, Montserrat Alternates" font-weight="700"><tspan x="0" y="0">Luvio.</tspan></text>
+  <text id="Luvio." transform="translate(0 23)" fill="#e8effa" font-size="24" font-family="Montserrat"  font-weight="700"><tspan x="0" y="0">Luvio.</tspan></text>
+  <defs>
+    <style type="text/css">@import url('http://fonts.googleapis.com/css?family=Montserrat:400,500');</style>
+  </defs>
 </svg>
+

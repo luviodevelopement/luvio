@@ -24,8 +24,9 @@
 
       &__anchor {
         color: $color-secondary;
-        &:hover, &:focus, &:visited {
-          color: $color-secondary;
+
+        &:hover, &:focus {
+          color: $color-primary;
         }
       }
     }

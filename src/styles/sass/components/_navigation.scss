@@ -1,7 +1,7 @@
 .nav{
   position: absolute;
   z-index: 999;
-  top: 19.15rem;
+  top: 19.14rem;
   left: 1.1rem;
   height: 17.72rem;
   width: 19.5rem;
@@ -56,8 +56,28 @@
       color: #FFFFFF;
     }
   }
+  @media only screen and(max-width: 375px) {
+    width: 17.5rem;
 
-  @media only screen and(min-width: 992px) {
+    &__item {
+      height: 8.5rem;
+      width: 8.4rem;
+    }
+
+  }
+
+  @media only screen and (min-width: 425px) and (max-width: 575px) {
+    width: 23.5rem;
+    height: 21.72rem;
+
+    &__item {
+      height: 10.5rem;
+      width: 11.4rem;
+    }
+  }
+
+
+  @media only screen and(min-width: 576px) {
     left: 0;
     top: 0;
     height: 4.7rem;

@@ -45,7 +45,7 @@
       background-repeat: no-repeat;
       background-position: center;
       margin: 0 .35rem .35rem 0;
-      background-size: contain;
+      background-size: cover;
 
       a {
         padding: 1.25rem .6rem;
@@ -92,6 +92,24 @@
 
     @media only screen and(min-width: 992px) {
       display: none;
+    }
+  }
+
+  @media only screen and(max-width: 375px) {
+    .our-vision {
+      &__item {
+        height: 8.5rem;
+        width: 8.4rem;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 425px) and (max-width: 575px) {
+    .our-vision {
+      &__item {
+        height: 10.5rem;
+        width: 11.4rem;
+      }
     }
   }
 

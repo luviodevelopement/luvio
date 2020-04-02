@@ -7,6 +7,8 @@
 
 
   &__item {
+    position: relative;
+    transform: translateZ(0);
     width: 4.5rem;
     height: 4.5rem;
     display: flex;
@@ -15,9 +17,33 @@
     cursor: pointer;
     background-color: $color-secondary;
 
-    &__image {
 
+    &:before{
+      content: "";
+      background-color: $color-primary;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transform: scaleY(0);
+      transform-origin: 50%  50%;
+      transition-property: transform;
+      transition-duration: 0.5s;
+      transition-timing-function: ease-out;
     }
+    &:hover {
+      &:before{
+        transform: scaleY(1);
+        transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+      }
+    }
+
+    &__image {
+      z-index: 999;
+    }
+
   }
 
   @media only screen and(min-width: 992px) {
